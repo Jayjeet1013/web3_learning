@@ -1,0 +1,43 @@
+ERC-721 Functions
+balanceOf: This function is used to return the number of NFTs (Non-Fungible Tokens) owned by a specific address.
+
+ownerOf: This function returns the address of the owner of a specific token. Each ERC721 token is unique, represented by an ID. This function allows users or applications to determine the owner of the token based on its unique ID.
+
+safeTransferFrom (without data): This function safely transfers the ownership of a specific token from one address to another. This function checks if the recipient is a smart contract. If it is, it must implement a specific function (onERC721Received) to accept the transfer.
+
+transferFrom: This function is used to transfer the ownership of a token from one address to another. It is generally used when the sender has been approved to transfer the token.
+
+approve: This function is used to give approval to an address to transfer a specific token. This allows for delegated transfers, where an owner can allow another party to transfer a token on their behalf.
+
+getApproved: This function is used to get the approved address for a specific token. If there is no approved address for the token, this function will return a null address.
+
+setApprovalForAll: This function allows an owner of one or more tokens to approve or revoke approval for an operator to manage all of their tokens.
+
+isApprovedForAll: This function is used to check if an operator is approved to manage all of an owner's tokens.
+
+safeTransferFrom (with data): This function is similar to safeTransferFrom (without data) but with an additional data parameter. This extra data can be used to pass additional information during the transfer if the recipient is a smart contract. This function also checks if the recipient is a smart contract and whether it implements the onERC721Received function.
+
+ERC-721 events
+Transfer: This event is emitted when the ownership of a token changes from one address to another. The event includes details about the sender (from), the recipient (to), and the specific token (by ID) that was transferred. This event allows external listeners, like UIs or other contracts, to react to the transfer.
+
+Approval: This event is triggered when an address is approved to transfer a specific token. It includes the current owner of the token (owner), the approved address that can now transfer the token (approved), and the specific token (by ID) that has been approved for transfer. This event enables applications to track approvals of tokens and react accordingly.
+
+ApprovalForAll: This event is emitted when an owner either approves or revokes the approval for an operator to manage all of their tokens. It includes the owner's address (owner), the operator's address (operator), and a boolean indicating whether the operator was approved or not (approved). This event enables applications to track which addresses have been given rights to manage all tokens of a certain owner.
+
+Use Cases of Non-Fungible Tokens (NFTs)
+Digital art (or physical art): Art pieces are the most popular use cases of NFTs. Digital art auctions were the first application of NFTs and continue to grow.
+
+Gaming: Providing in-game purchases and collectibles of games.
+
+Real estate: Tokenizing properties and smart contracts and carry buying and selling.
+
+Finance: Financial instruments like loans, futures, and other responsibilities.
+
+Software titles: Software licenses to ensure anti-piracy and privacy.
+
+Concert tickets/Sports match tickets: To ensure that no fraud happens in ticket selling and fans can have a single place to view past experiences.
+
+KYC compliance: Creating a token for a specific user’s KYC.
+
+One key aspect of the ERC-721 standard is that it does not natively support the minting of multiple NFTs in one transaction. This is where the ERC721A implementation comes in. The ERC721A implementation was created by Azuki, and its main purpose is to allow for gas-efficient minting of multiple NFTs in one transaction. 
+

@@ -1,0 +1,26 @@
+ERC stands for Ethereum Request for Comment (ERC) 
+
+As stated in EIP-1, Ethereum Request for Comment (ERC) relates to a specific category of Standards Track EIP. A Standards Track EIP describes any change that affects most or all Ethereum implementations and can be broken down into different subcategories such as core, networking, interface and ERC.
+ERC: While the definition has grown over time, an Ethereum Request for Comment (ERC) was the original draft proposal developers wrote and later refined as an EIP for different application levels and conventions. These include token standards (ERC-20), URI schemes, library/package formats (EIP-82) or wallet formats. If the specific EIP achieves consensus in the Ethereum community, it becomes a new standard that automates the rules outlined in the document through a related smart contract.
+
+ERCs are application-level standards for Ethereum and can include token standards, name registries, library/package formats, and more. 
+
+some ercs are:-
+
+ERC-20: Proposed by Fabian Vogelsteller and VButerin in November 2015, the ERC-20 (Ethereum Request for Comments 20) is the most popular interface for fungible (interchangeable) tokens that implement an API (application programming interface) within smart contracts. Some examples of what the ERC-20 token allows people to do include:
+Transfer tokens between accounts.
+View the current token balance of an account.
+View the total supply of a token available on the network.
+Confirm third-party spending.
+A standard interface that allows tokens on Ethereum to be reused by other applications, for example, from wallets to decentralized exchanges.
+
+ERC-721: Inspired by the ERC-20 token standard, the ERC-721 was proposed two years later by William Entriken, Dieter Shirley, Jacob Evans and Nastassia Sachs in January 2018. While the EIP-20 caters to fungible (replicable and interchangeable assets), it doesn't support the unique structure of non-fungible tokens (NFTs), because each asset is distinct (non-fungible). As a result, the ERC-721 was created as the standard interface for NFTs like artwork or songs. Because each ERC-721 token is unique, they are reflected on the blockchain by an ID. That ID can then be used by other people or applications to verify proof of ownership.
+Several well-known NFT collections that use the ERC-721 token standard include:
+CryptoKitties: originally compatible with an earlier version of the ERC-721 standard, CryptoKitties is a play-to-earn game that pioneered the ability to let users breed and collect digital cats on the Ethereum blockchain.
+Ethereum Name Service (ENS): a secure and decentralized naming service that helps turn cryptographic Ethereum wallet addresses into readable names, URLs and emojis like vitalik.eth as registered by Buterin.
+Bored Ape Yacht Club (BAYC): a collection of 10,000 unique NFTs launched in April 2021 by Yuga Labs. Alongside functioning as verifiably rare digital art, each NFT also acts as a form of membership to the exclusive club, which provides community perks and benefits.
+
+ERC-1155 Multi-Token Standard:
+ERC-1155 permits the development of both fungible and non-fungible tokens. The ERC-1155 Ethereum token standard combines the capabilities of earlier standards like ERC-20 (for fungible tokens) and ERC-721 (for non-fungible tokens).
+Blockchain-based assets may now be created and traded more cheaply and efficiently thanks to ERC-1155, which facilitates the efficient transfer of both fungible and non-fungible tokens in a single transaction. The ERC-1155 standard, which combines the traits of ERC-721 and ERC-20, offers applications in a range of fields, including gaming, creator monetization, and more.
+

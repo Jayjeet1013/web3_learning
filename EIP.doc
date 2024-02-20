@@ -1,1 +1,80 @@
-Eip
+EIP stands for ethereum improvement Proposal
+
+EIPs are proposals that suggest new features or processes for the Ethereum network. They include technical details for the proposed changes and are considered the definitive source of information for the community
+One of the ways that the community proposes, discusses, and adopts changes to the Ethereum protocol and standards is through the Ethereum Improvement Proposal (EIP) process.
+Any member of the Ethereum community can create an EIP as per the guidelines mentioned in EIP-1. An EIP should provide a precise technical specification with minimal motivation. 
+
+Ethereum Improvement Proposals (EIPs) are the central method around which updates and decisions are made on the Ethereum blockchain and are open to all.
+ Anyone with enough technical proficiency can write, edit and submit Ethereum Improvement Proposals (EIPs) for new functionality or features that they would like to implement according to the guidelines in the EIP-1, which was published in 2015.
+‍
+EIPs are approved after discussion, deliberation, and consensus. An EIP can be proposed by anybody, but before it can be implemented, it must be evaluated and accepted by the Ethereum community.
+
+Following is the procedure for passing an EIP: An EIP proposal is made by a developer and uploaded to the Ethereum repository.
+
+The EIP is examined by the EIP editors, who look for grammatical errors and technical soundness.
+The EIP is available for public discussion and is posted on the Ethereum website.
+The "Last Call" stage is where the Ethereum Core Developers review the EIP if it receives positive feedback.
+The Ethereum software incorporates the EIP if the Core Developers agree with it.
+Not all EIPs are approved. An EIP may be rejected or delayed if there is sufficient opposition to it. In the end, it is up to the Ethereum community to decide whether or not to pass an EIP.
+
+EIP 137: Ethereum Domain Name Service (ENS)
+A proposed protocol called the Ethereum Name Service provides flexible resolution of short, human-readable names to service and resource identifiers. The specifications of the Ethereum Name Service are described in EIP 137.
+
+
+EIP 1679 The Ethereum Hardfork Meta:
+Istanbul tracks the changes included in the Istanbul hardfork. Istanbul is the eighth Ethereum hardfork and was activated on December 7th, 2019.
+
+
+EIP 3675 Consensus upgrade from to Proof-of-Work to Proof-of-Stake
+EIP-3675 intends to change the Ethereum network's consensus method from Proof-of-Work (PoW) to Proof-of-Stake (PoS).
+
+EIP 4337 The Birth of Account Abstraction:
+ERC-4337 is an Ethereum standard that enables smart contract wallets to act as primary accounts without any consensus-layer changes. This standard defines a new type of account called a smart account. Smart accounts are controlled by a combination of private keys and smart contracts.
+
+
+
+EIPs play a crucial role in the Ethereum ecosystem. They allow anyone to propose changes to the blockchain, and they help to ensure that the blockchain is constantly evolving and improving.
+
+EIP-2309: ERC-721 Consecutive Transfer Extension
+Created at 2019–10–08
+
+The optional ERC-721 Consecutive Transfer Extension provides a standardized event that could be emitted during the creation/transfer of one, or many non-fungible tokens. This standard does not set the expectation of how you might create/transfer many tokens.
+
+EIP-2981: NFT Royalty Standard
+Created at 2020–09–15
+
+This EIP enables any NFT marketplace to unite on a single royalty payment standard. This standard allows token-holders who support both ERC-721 and ERC-1155 interfaces to make a standardized way of signaling royalty information. 
+
+
+EIP-3525: Semi-Fungible Token
+Created at 2020–12–01
+
+This token standard is designed to represent semi-fungible assets, which are most suited for financial instruments rather than collectibles or in-game items — ERC1155.
+The semi-fungibility of the tokens is defined by the SLOT property, when two tokens have the same SLOT, their value is fungible, that is: they can be added together like ERC-20 tokens do.
+
+
+EIP 4907: Rental NFTs
+Created at: 2022–03–11
+
+This standard is an extension of EIP-721. It proposes an additional role (user) that can be granted to addresses and a time when the role is automatically revoked (expires). The user role represents permission to “use” the NFT, but not the ability to transfer it or set users.
+
+EIP-5192: Minimal Soulbound NFTs
+created at: 2022–07–01
+
+This standard proposes an extension of EIP-721. It aims to make tokens soulbound using EIP-165’s ability to detect features. A soulbound token is a non-fungible token bound to a single account.
+
+
+EIP-5375: NFT Author Information and Consent
+Created at: 2022–07–30
+
+The EIP standardizes a JSON format for storing off-chain information about NFT authors. Specifically, it adds a new field that provides a list of author names, addresses, and proofs of authorship consent: proofs that the authors have agreed to be named as authors. Note that proof of authorship consent is not proof of authorship: an address can consent without having authored the NFT.
+
+This EIP standardizes the format for storing this information on the blockchain. It also moves some functionality from ENS into the blockchain (such as registering new NFTs), which will allow us to use other EIPs like this one in the future.
+
+
+
+EIP-5528: Refundable Fungible Token
+Created on : 2022–08–16
+
+Because there is no way to reverse payments in a pseudonymous cryptocurrency, the lack of trusted escrow services creates an unsafe environment for crypto payments. 
+
