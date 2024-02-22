@@ -1,0 +1,47 @@
+IPFS
+
+a peer-to-peer file storing and sharing distributed system. There are multiple methods for engaging with the IPFS protocol
+
+
+
+Download for Ubuntu
+Ubuntu
+While these instructions are specific to Ubuntu, they will likely work with most Ubuntu-related Linux distributions. For non-Ubuntu Linux distributions, check out the IPFS Desktop GitHub repository (opens new window)for install instructions.
+
+Install with .deb
+Download the latest .deb installer from the IPFS Desktop GitHub repository (opens new window).
+
+Double click to install the package with Ubuntu Software, or move into where you downloaded the installer and install from the command-line:
+
+sudo dpkg -i ./ipfs-desktop-[version]-amd64.deb
+Replace [version] with the version number of the IPFS package you just downloaded
+
+
+i use nft storage to upload the image and then copy usl and paste in the .json file and then upload that json file to nft.storage and then copy the ipfs url and then mint nft.
+
+this is the simple nft minter smartcontract using openzeppelin
+
+///////////////////////////////////////////
+
+//SPDX-License-Identifier: MIT
+
+pragma solidity^0.8.20;
+
+import "@openzeppelin/contracts@5.0.0/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts@5.0.0/access/Ownable.sol";
+
+contract nftmint is ERC721URIStorage,Ownable{
+
+  constructor(address initialOwner) ERC721("Jaynft","JAN") Ownable(initialOwner) {}
+
+  function mint(address _to,uint256 _tokenId ,string calldata _uri ) external  onlyOwner{
+    _mint(_to,_tokenId);
+    _setTokenURI(_tokenId,_uri);
+  }
+
+}
+
+/////////////////////////////////////
+
+this is the link https://testnets.opensea.io/collection/jaynft-6
+
